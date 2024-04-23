@@ -184,3 +184,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
     calendar.render();
 });
+
+// Sample data for special offers
+var specialOffers = [
+    {
+      title: "50% Off on All Albums",
+      description: "Limited time offer. Grab your favorite albums at half the price!",
+      discount: "50%"
+    },
+    {
+      title: "Buy 1 Get 1 Free on Concert Tickets",
+      description: "Special promotion for our loyal customers. Buy one ticket and get another for free!",
+      discount: "Buy 1 Get 1 Free"
+    },
+    {
+      title: "10% Discount on Premium Memberships",
+      description: "Upgrade to a premium membership and enjoy ad-free music with exclusive benefits.",
+      discount: "10%"
+    }
+  ];
+  
+  // Function to display special offers
+  function displaySpecialOffers() {
+    var offerList = document.getElementById('offerList');
+    specialOffers.forEach(function(offer) {
+      var offerDiv = document.createElement('div');
+      offerDiv.classList.add('offer');
+      offerDiv.innerHTML = `
+        <h3>${offer.title}</h3>
+        <p>${offer.description}</p>
+        <p class="discount">Discount: ${offer.discount}</p>
+      `;
+      offerList.appendChild(offerDiv);
+    });
+  }
+  
+  // Call the function to display special offers
+  displaySpecialOffers();
+  

@@ -310,3 +310,43 @@ section#calendar h2 {
     margin: 0 auto;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #aboutContent {
+    padding: 20px;
+  }
+  
+  #specialOffers {
+    margin-top: 20px;
+  }
+  
+  .offer {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .offer h3 {
+    margin-top: 0;
+  }
+  
+  .offer p {
+    margin-bottom: 0;
+  }
+  
+  .offer .discount {
+    color: red;
+    font-weight: bold;
+  }
+  
